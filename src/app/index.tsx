@@ -1,9 +1,5 @@
 function Index() {
-  return (
-    <>
-      App works fine!
-    </>
-  )
+  return <>App works fine!</>;
 }
 
-export default Index
+export default Index;

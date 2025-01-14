@@ -1,0 +1,11 @@
+.search-bar {
+  width: fit-content;
+  position: relative;
+  &::after {
+    content: url("../../assets/icons/search.svg");
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    color: #000;
+  }
+}
