@@ -1,6 +1,6 @@
 import "./datepicker.scss";
 import { FC } from "react";
-import { IFormField } from "../models/form-field.model";
+import { IFormField } from "../../models/form-field.model";
 
 export const Datepicker: FC<IFormField> = (props) => {
   const { label, placeholder, name, onValueChange, className } = props;

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import React from "react";
-import { IFormField } from "../models/form-field.model";
+import { IFormField } from "../../models/form-field.model";
 
 type Props = {
   initialValue?: any;

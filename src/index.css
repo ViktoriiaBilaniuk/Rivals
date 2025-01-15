@@ -6,3 +6,8 @@
   box-sizing: border-box;
 }
 
+/* temp styles for convenience */
+body {
+  background-color: #00000083;
+  padding: 20px;
+}

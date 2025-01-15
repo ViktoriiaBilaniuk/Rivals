@@ -1,0 +1,15 @@
+.rank-badge {
+  &-icon {
+    width: 20px;
+    height: 20px;
+    &.bronze {
+      fill: #cc986d;
+    }
+    &.silver {
+      fill: #bcc6cc;
+    }
+    &.gold {
+      fill: #f5bf03;
+    }
+  }
+}
