@@ -1,0 +1,121 @@
+.sidebar {
+  position: fixed;
+  width: 85px;
+  height: calc(100vh - 70px);
+  background-color: var(--sidebar-background);
+
+
+  &-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 20px 0 10px;
+
+    &__name {
+      color: var(--sidebar-menu-color);
+    }
+
+    &__logo_img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 100%;
+    }
+  }
+
+  &-currency {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+
+    &__amount {
+      display: flex;
+      align-items: center;
+
+      &_logo {
+        width: 20px;
+        height: 20px;
+      }
+
+      &_value {
+        color: var(--sidebar-menu-color);
+      }
+    }
+
+    &__deposit {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      background-color: transparent;
+      font-weight: 500;
+
+      cursor: pointer;
+
+      color: var(--deposit-button-color);
+      border: 1px solid var(--deposit-button-color);
+    }
+  }
+
+  &-rank {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+      color: var(--sidebar-menu-color);
+    }
+
+    &__logo {
+      width: 70%;
+    }
+  }
+
+  &-hr {
+    margin: 20px 0;
+  }
+
+  &-navigation__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.sidebar-navigation__link {
+  text-decoration: none;
+
+  .tab__label {
+    display: none;
+    color: var(--sidebar-menu-color);
+    text-decoration: none;
+  }
+
+  &_icon {
+    width: 35px;
+  }
+
+  &.active {
+    .tab__label {
+      display: inline-block;
+    }
+
+    svg path {
+      fill: #F0F0F0 !important;
+    }
+  }
+}
+
+.sidebar-navigation__item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+

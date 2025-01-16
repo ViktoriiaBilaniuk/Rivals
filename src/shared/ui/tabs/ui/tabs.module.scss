@@ -1,0 +1,21 @@
+.tabs {
+  display: flex;
+  align-items: center;
+
+
+  .tab {
+
+    &__link {
+      border-bottom: 1px solid #444;
+      display: block;
+      padding: 8px 15px;
+      color: var(--tab-inactive-color);
+      text-decoration: none;
+
+      &.active {
+        color: var(--tab-active-color);
+        border-bottom: 1px solid var(--tab-active-color);
+      }
+    }
+  }
+}

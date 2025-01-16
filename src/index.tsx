@@ -1,17 +1,30 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import "./index.css";
-import "./shared/assets/styles/styles.scss";
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
 import App from "./app";
-import { Route, Routes } from "react-router";
-import { BrowserRouter } from "react-router-dom";
+import './index.scss'
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {Layout} from "./widgets/layout/ui";
+
+const router = createBrowserRouter([
+  {
+    path: '',
+    element: <Layout/>,
+    children: [
+      {
+        path: '',
+        element: <App/>
+      },
+      {
+        path: 'tournaments',
+        element: <App/>
+      },
+    ]
+  }
+])
+
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-      </Routes>
-    </BrowserRouter>
-  </StrictMode>
-);
+    <RouterProvider router={router}/>
+  </StrictMode>,
+)

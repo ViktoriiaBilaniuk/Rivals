@@ -1,0 +1,37 @@
+.header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: var(--header-background);
+  box-shadow: 0 0 10px #000;
+  padding: 10px 40px;
+
+  position: relative;
+  z-index: 3;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    &_image {
+      width: 50px;
+      height: 50px;
+    }
+
+    &_name {
+      font-size: 16px;
+      line-height: 1.2em;
+      color: var(--header-logo-color);
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 32px;
+  }
+}
+
