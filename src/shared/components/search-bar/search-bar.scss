@@ -1,0 +1,31 @@
+.search {
+  max-width: 240px;
+  width: 100%;
+  position: relative;
+
+  &::after {
+    content: url("../../assets/icons/search.svg");
+    position: absolute;
+    right: 4px;
+    top: 4px;
+  }
+
+  input {
+    outline: 0;
+    border: 0;
+    background-color: #515151;
+    height: 24px;
+    padding: 4px 8px;
+    color: #f0f0f0;
+    border-radius: 4px;
+    &::placeholder {
+      color: #b5b3b3;
+    }
+  }
+
+  &__dropdown {
+    .dropdown__wrapper {
+      width: 100%;
+    }
+  }
+}
