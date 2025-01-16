@@ -1,0 +1,29 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: var(--main-background);
+  color: var(--text-white);
+}
+
+ul {
+  list-style-type: none;
+}
+
+:root {
+  --header-background: #202020;
+  --header-logo-color: #F0F0F0;
+
+  --sidebar-background: #202020;
+  --sidebar-menu-color: #F0F0F0;
+  --deposit-button-color: #FFBB00;
+
+  --tab-active-color: #FFBB00;
+  --tab-inactive-color: #F0F0F0;
+
+  --text-white: #F0F0F0;
+  --main-background: #0A0A0A;
+}
