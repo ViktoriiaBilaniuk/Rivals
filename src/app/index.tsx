@@ -1,12 +1,17 @@
-import {Tabs} from "../shared/ui/tabs";
+import { Tabs } from '../shared/ui/tabs';
 
-function Index() {
+function App() {
   return (
     <>
-      <Tabs tabs={[{name: 'Home', link: '/'}, {name: 'Tournaments', link: '/tournaments'}]}/>
+      <Tabs
+        tabs={[
+          { name: 'Home', link: '/' },
+          { name: 'Tournaments', link: '/tournaments' }
+        ]}
+      />
       App works fine!
     </>
-  )
+  );
 }
 
-export default Index
+export default App;
