@@ -1,0 +1,44 @@
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 80px 50px 0;
+
+}
+
+.action--create-custom-tournament {
+}
+
+.action {
+  display: flex;
+  align-items: center;
+
+  background-color: #2e2e2e;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.action__image {
+  position: relative;
+  top: -80px;
+  height: 170px;
+
+  img {
+    height: 250px;
+  }
+}
+
+.action__content {
+  width: 100%;
+}
+
+.action__content_name {
+  width: 100%;
+  padding: 0 30px;
+}
+
+.action--join-tournament {
+  display: flex;
+  flex-direction: row-reverse;
+}

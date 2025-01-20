@@ -1,0 +1,1 @@
+export { Tournaments } from './ui';

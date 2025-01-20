@@ -1,0 +1,32 @@
+.container {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+
+  &__actions a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.tournaments {
+  display: flex;
+
+  &__list {
+    flex: 1 75%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  &__filters {
+    flex: 1 25%;
+  }
+}
