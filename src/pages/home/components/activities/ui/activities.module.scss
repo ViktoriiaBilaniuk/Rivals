@@ -1,0 +1,47 @@
+.activities {
+  background-color: #2e2e2e;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.activities__header {
+}
+
+.activities__header_title {
+  text-align: center;
+  padding-bottom: 4px;
+}
+
+.activities__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  max-height: 100px;
+  overflow: auto;
+}
+
+.activities__list_item {
+}
+
+
+.activity {
+  display: flex;
+  gap: 8px;
+  background-color: #444444;
+  border-radius: 4px;
+}
+
+.activity__image img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.activity__content {
+  padding: 4px 4px 4px 0;
+}
+
+.activity__content_description {
+}

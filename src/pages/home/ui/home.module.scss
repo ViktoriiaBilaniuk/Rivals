@@ -1,0 +1,35 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 40px 20px;
+  grid-template-areas:
+          'profile my_activities award'
+          'actions actions activities'
+          'tournaments tournaments tournaments'
+}
+
+.profile {
+  grid-area: profile;
+  margin-left: 80px;
+}
+
+.my__daily__activities {
+  grid-area: my_activities;
+}
+
+.award {
+  grid-area: award;
+}
+
+.actions {
+  grid-area: actions;
+}
+
+.activities {
+  grid-area: activities;
+}
+
+.tournaments {
+  grid-area: tournaments;
+}

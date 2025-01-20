@@ -1,0 +1,70 @@
+.tournament {
+  min-width: 285px;
+  max-width: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tournament__header {
+  display: flex;
+  padding: 8px 15px;
+  background-color: #202020;
+}
+
+.tournament__header_prize {
+}
+
+.tournament__header_prize_name {
+}
+
+.tournament__header_prize_value {
+}
+
+.tournament__content {
+  padding: 8px 15px;
+  background-color: #2b2b2b;
+  text-align: center;
+}
+
+.tournament__content_start-date {
+}
+
+.tournament__content_name {
+}
+
+.tournament__games {
+  padding: 8px 15px;
+  background-color: #2b2b2b;
+
+  img {
+    width: 80px;
+  }
+}
+
+.tournament__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #202020;
+  padding: 8px 15px;
+}
+
+.tournament__footer_members {
+  background-color: #2b2b2b;
+}
+
+.tournament__footer_count {
+}
+
+.tournament__footer_count_highlighted {
+}
+
+.tournament__footer_buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+}
+
+.tournament__footer_buttons_favourite {
+}
